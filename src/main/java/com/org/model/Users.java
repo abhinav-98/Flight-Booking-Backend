@@ -13,7 +13,7 @@ public class Users {
 
 	@Id
 	private BigInteger userId;
-	private String userName;
+//	private String userName;
 	private String userPassword;
 	private BigInteger userPhone;
 	private String userEmail;
@@ -21,9 +21,9 @@ public class Users {
 	/**
 	 * Parameterized Constructors of Users
 	 */
-	public Users(String userName, String userPassword, BigInteger userPhone, String userEmail, String userType,
+	public Users(String userPassword, BigInteger userPhone, String userEmail, String userType,
 			BigInteger userId) {
-		this.userName = userName;
+//		this.userName = userName;
 		this.userPassword = userPassword;
 		this.userPhone = userPhone;
 		this.userEmail = userEmail;
@@ -53,13 +53,13 @@ public class Users {
 		this.userId = userId;
 	}
 
-	public String getUserName() {
-		return userName;
-	}
-
-	public void setUserName(String userName) {
-		this.userName = userName;
-	}
+//	public String getUserName() {
+//		return userName;
+//	}
+//
+//	public void setUserName(String userName) {
+//		this.userName = userName;
+//	}
 
 	public String getUserPassword() {
 		return userPassword;

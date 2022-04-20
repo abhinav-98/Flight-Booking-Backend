@@ -66,19 +66,36 @@ public class UserServiceImpl implements UserService {
 		return userDao.findAll();
 	}
 
+//	@Override
+//	public ResponseEntity<?> findUserById(BigInteger userId) {
+//		// TODO Auto-generated method stub
+//		Optional<Users> findById = userDao.findById(userId);
+//		try {
+//			if (findById.isPresent()) {
+//				Users findUser = findById.get();
+//				return new ResponseEntity<Users>(findUser, HttpStatus.OK);
+//			} else
+//				throw new RecordNotFoundException("No record found with ID " + userId);
+//		} catch (RecordNotFoundException e) {
+//			return new ResponseEntity(e.getMessage(), HttpStatus.NOT_FOUND);
+//		}
+//	}
+
+
+	//login details
 	@Override
-	public ResponseEntity<?> findUserById(BigInteger userId) {
-		// TODO Auto-generated method stub
+	public ResponseEntity<?> userLogin(BigInteger userId) {
+
 		Optional<Users> findById = userDao.findById(userId);
-		try {
-			if (findById.isPresent()) {
+		try{
+			if(findById.isPresent()){
 				Users findUser = findById.get();
-				return new ResponseEntity<Users>(findUser, HttpStatus.OK);
-			} else
+				return new ResponseEntity<Users>(findUser,HttpStatus.OK);
+			}else
 				throw new RecordNotFoundException("No record found with ID " + userId);
 		} catch (RecordNotFoundException e) {
 			return new ResponseEntity(e.getMessage(), HttpStatus.NOT_FOUND);
 		}
-	}
 
+	}
 }

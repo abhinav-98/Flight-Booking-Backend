@@ -16,5 +16,9 @@ public interface UserService {
 
 	public Iterable<Users> displayAllUser();
 
-	public ResponseEntity<?> findUserById(BigInteger userId);
+//	public ResponseEntity<?> findUserById(BigInteger userId);
+
+
+	//login details
+    ResponseEntity<?> userLogin(BigInteger userId);
 }

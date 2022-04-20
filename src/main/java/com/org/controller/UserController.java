@@ -2,6 +2,7 @@ package com.org.controller;
 
 import java.math.BigInteger;
 
+import org.apache.coyote.Response;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.http.ResponseEntity;
@@ -21,7 +22,7 @@ public class UserController {
 	@Autowired
 	UserService userService;
 
-	@PostMapping("/createUser")
+	@PostMapping("/createUser") //--> signup
 	@ExceptionHandler(RecordAlreadyPresentException.class)
 	public void addUser(@RequestBody Users newUser) {
 
@@ -41,17 +42,25 @@ public class UserController {
 		userService.updateUser(updateUser);
 	}
 
-	@GetMapping("/searchUser/{id}")
-	@ExceptionHandler(RecordNotFoundException.class)
-	public ResponseEntity<?> searchUserByID(@PathVariable("id") BigInteger userId) {
-
-		return userService.findUserById(userId);
-	}
+//	@GetMapping("/searchUser/{id}")
+//	@ExceptionHandler(RecordNotFoundException.class)
+//	public ResponseEntity<?> searchUserByID(@PathVariable("id") BigInteger userId) {
+//
+//		return userService.findUserById(userId);
+//	}
 
 	@DeleteMapping("/deleteUser/{id}")
 	@ExceptionHandler(RecordNotFoundException.class)
 	public void deleteBookingByID(@PathVariable("id") BigInteger userId) {
 
 		userService.deleteUser(userId);
+	}
+
+	//login details
+	@GetMapping("/userLogin/{id}")
+	@ExceptionHandler(RecordNotFoundException.class)
+	public ResponseEntity<?> userLogin(@PathVariable("id") BigInteger userId){
+
+		return userService.userLogin(userId);
 	}
 }
