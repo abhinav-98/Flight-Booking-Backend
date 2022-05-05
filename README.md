@@ -31,11 +31,10 @@ Flight Booking System is a web based java application that helps users to book t
 2) Run the project.
 3) Recommendation: Change server.port in application.properties file.
 4) The project will start and will create tables in the database using hibernate/JPA. Leave the project running.
----FRONTEND---
 5) Download and install NODEJS in your system to run frontend part built on reactJS.
 6) Download the frontend part by using the link above.
 7) Open the frontend project as folder in VSCODE.
-8) If everything is installed correctly, run the project. It will open on localhost:3000.
+8) If everything is installed correctly, run the project. It will open on localhost:3000. (npm start)
 
 
 ## Deployment
@@ -49,6 +48,9 @@ Will be deploying the live project soon.
 4) Arushi Pundir
 5) Aayushi Modi
 
-# PRoject Images
+# Project Images
+![1](https://user-images.githubusercontent.com/60566576/166874685-e898bbb9-cbda-4add-97f2-4420f9abb6a8.PNG)
+
+
 
  
