@@ -50,6 +50,12 @@ Will be deploying the live project soon.
 
 # Project Images
 ![1](https://user-images.githubusercontent.com/60566576/166874685-e898bbb9-cbda-4add-97f2-4420f9abb6a8.PNG)
+![2](https://user-images.githubusercontent.com/60566576/166874746-98b53951-446a-4630-8d6c-62fb885a68c0.PNG)
+![3](https://user-images.githubusercontent.com/60566576/166874757-d44b25df-7e95-48bb-b168-d91bb282b684.PNG)
+![4](https://user-images.githubusercontent.com/60566576/166874769-a8dfb153-41c5-42d0-b180-8af4229afbd9.PNG)
+
+
+
 
 
 
